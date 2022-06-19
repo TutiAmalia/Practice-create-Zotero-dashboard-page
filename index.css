@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+header{
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+
+.header-container{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    height: 100px;
+    margin: auto;
+    justify-content: space-between;
+    /* background-color: blue; */
+}   
+.zotero-logo{
+    height: 170px;
+    width: 130px;
+}
+
+header.scroll {
+    background-color: rgb(27, 24, 44);
+}
+
+#header-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+}
+
+ul#header-nav{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    /* background-color: chartreuse; */
+}
+
+ul#header-nav li{
+    display: inline-block;
+    margin-right: 28px;
+    font-size: 1.0rem;
+    color: rgb(65, 65, 65);
+    /* background-color: cyan; */
+}
+
+ul#header-nav li:nth-child(5){
+    font-weight: lighter;
+    color:#0069e0;
+}
+
+ul#header-nav li:nth-child(6){
+    background-color: #005ec9;
+    color: antiquewhite;
+    padding: 7px 15px;
+    width: auto;
+    border-radius: 3px;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+/* main website */
+.bg-image{
+    background-image: url(Image/jumbotron.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 100vh; */
+    /* padding-bottom: 100px; */
+    /* background-position: -45px; */
+    background-color: #2c3038;
+    background-position: center 35px;
+}
+main{
+    background: white;
+}
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: auto;
+    align-items: flex-start;
+    /* padding-bottom: 100px; */
+}
+.main-section{
+    background-color: white;
+}
+.main-container{
+    display: flex;
+    width: 100%;
+    /* background-color: #2c3038; */
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding-top: 250px;
+    height: 125vh;
+    /* padding-bottom: 100px; */
+    /* padding-top: 65px; */
+}
+
+.main-container h1{
+    color: white;
+    margin-top: -145px;
+    font-size: 3.75rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 60px;
+    
+    /* background-color: aqua; */
+}
+
+.lead{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 35px;
+    /* background-color: chartreuse; */
+}
+
+.download-button{
+    padding: 10px 25px;
+    width: auto;
+    background-color: crimson;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.sub-lead{
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 40px;
+}
+.img-zotero{
+    max-width: 1200px;
+    margin: auto;
+    width:100%;
+    background-size: auto;
+    align-items: center;
+    margin-top: -190px;
+    height: auto;
+    /* background-position:-350px; */
+    /* padding-bottom: 10px; */
+}
+
+
+/* main article */
+/* .main-article{
+    margin-top: auto;
+    position: relative;
+    background-color: blue;
+} */
+.meet-zotero{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 50px;
+}
+
+/* landing item */
+.landing-item{
+    /* padding: 0px 110px; */
+    padding-right: 110px;
+    padding-left: 60px;
+    flex-direction: row;
+    column-count: 2;
+    display: flex;
+    margin: 80px;
+}
+
+.landing-image{
+    /* width: 100%; */
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 0px;
+    /* margin: 0px 50px; */
+    /* padding-right: 80px; */
+    /* margin: 100px; */
+    /* background-color: #0069e0; */
+}
+
+.landing-caption h2{
+    font-size: 2rem;
+}
+
+.landing-caption{
+    line-height: 1.5;
+    /* margin: 0px 50px; */
+    margin-left: 50px;
+    margin-right: 0px;
+    padding-left: 50px;
+}
+/* .landing-item img{ */
+    /* padding: 0px 100px; */
+    /* background-color: #0069e0;
+    align-items: center; */
+/* } */
+/* 
+.landing-item h2{
+    
+} */
+
+.landing-caption p{
+    /* max-width: 69%; */
+    line-height: 1.75;
+    font-size: 1.25rem;
+    /* background-color: #2c3038; */
+}
+
+.landing-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.landing-caption-p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#line{
+    width: 100%;
+    /* height: 4px; */
+    background-color: #979899ee;
+    margin: 50px 0px;
+}
+
+.landing-bottom{
+    display: flex;
+    /* flex-direction: row; */
+    /* padding: 0px 50px; */
+    /* margin-top:0; */
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.landing-bottom h2{
+    padding-right: 100px;
+}
+
+/* footer */
+/* footer{
+    padding-bottom: 0;
+} */
+.container-footer{
+    
+    padding: 10px 20px ;
+    margin: auto;
+    width: 100%;
+    background-color: #2c3038;
+
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    flex-direction: column;
+}
+.footer-item{
+    display: flex;
+    padding-right: 100px;
+}
+
+#footer{
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    max-width: 100%;
+    /* background-color: #0069e0; */
+    /* align-items: center; */
+}
+
+ul#footer{
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    padding: 10px 50px;
+    /* background-color: chartreuse; */
+}
+
+ul#footer li{
+    display: inline-block;
+    font-size: 1rem;
+    color: rgb(145, 139, 139);
+    padding: 0px 10px;
+    /* background-color: cyan; */
+}
+
+.follow-us{
+    color: rgb(145, 139, 139);
+    display: inline-flex;
+    align-items: center; 
+    justify-content: flex-end;
+    /* margin: 0; */
+    position: relative;
+    width: 25%;
+
+    /* padding-right: 20px; */
+    /* margin-left: 0; */
+    /* padding-right: 30px; */
+    /* background-color: aqua; */
+
+}
+.follow-us p{
+    /* justify-content: right; */
+    /* max-width: 100%; */
+    /* margin-right: 10px; */
+    padding-right: 13px;
+    text-align: right;
+}
+
+.follow-us button{
+    /* margin-right: 20px; */
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    /* position: absolute; */
+    /* right: -15px; */
+    /* top: 50%; */
+
+    /* transform: translateY(-50%); */
+}
+
+/* .twitter-icon{
+    color: rgb(145, 139, 139);
+    fill: none;
+} */
+
+.footer-caption{
+    color: rgb(145, 139, 139);
+    text-align: center;
+    padding: 25px 220px;
+    font-size: small;
+    line-height: 1.5;
+    font-weight: bold;
+}
